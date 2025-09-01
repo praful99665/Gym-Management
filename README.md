@@ -7,6 +7,7 @@ A custom Frappe app to manage gym members, subscriptions, and payments efficient
 - Handle Membership Plans and Subscriptions
 - Track Workout Sessions
 - Manage Payments and Invoices
+- Notifications
 - Integration with ERPNext for accounting
 
 ## Installation
