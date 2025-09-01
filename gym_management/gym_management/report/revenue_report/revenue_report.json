@@ -1,0 +1,27 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2025-08-31 22:20:42.654821",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-08-31 22:23:05.871723",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Revenue Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    m.gym_member_name AS \"Gym Member::200\",\n    m.membership_plan_name AS \"Membership Plan::200\",\n    m.start_date AS \"Start Date:Date:120\",\n    m.end_date AS \"End Date:Date:120\",\n    m.status AS \"Membership Status::120\",\n    si.name AS \"Sales Invoice:Link/Sales Invoice:200\",\n    si.status AS \"Status::120\",\n    si.grand_total AS \"Invoice Amount:Currency:150\"\n\nFROM\n    `tabMembership` m\nLEFT JOIN\n    `tabSales Invoice` si ON si.name = m.invoice\nWHERE\n    si.docstatus = 1\nORDER BY\n    si.posting_date DESC;\n",
+ "ref_doctype": "Membership",
+ "report_name": "Revenue Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

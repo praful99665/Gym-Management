@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-29 19:30:54.942786",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "session_name",
+  "trainer",
+  "date",
+  "column_break_hoqq",
+  "time",
+  "workout_type",
+  "duration",
+  "section_break_evaa",
+  "members"
+ ],
+ "fields": [
+  {
+   "fieldname": "session_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Session Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Trainer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "workout_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workout Type",
+   "options": "Workout Types",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Members"
+  },
+  {
+   "fieldname": "column_break_hoqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_evaa",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-31 13:26:32.763885",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Workout Session",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

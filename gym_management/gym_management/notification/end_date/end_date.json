@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2025-09-01 08:58:06.290589",
+ "date_changed": "end_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Membership",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "\nHi {{ member_name }},<br>\n\nYour {{ membership_plan_name }} membership ends tomorrow ({{ end_date }}).<br>\nRenew today to continue your fitness journey without interruption.<br>\n\n[Renew Now]<br>\n\nThank you",
+ "modified": "2025-09-01 08:58:06.290589",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "End Date",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Your Gym Membership Ends Tomorrow \u2013 Renew to Stay Active!"
+}

@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-29 18:54:34.929467",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_7dhh",
+  "amended_from",
+  "gym_member",
+  "membership_plan",
+  "start_date",
+  "end_date",
+  "membership_plan_name",
+  "column_break_lpwt",
+  "status",
+  "invoice",
+  "payment_status",
+  "gym_member_name",
+  "price",
+  "customer",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7dhh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Membership",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "gym_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Member",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "membership_plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Membership Plan",
+   "options": "Membership Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nCancelled"
+  },
+  {
+   "depends_on": "eval:!!doc.invoice",
+   "fieldname": "invoice",
+   "fieldtype": "Link",
+   "label": "Invoice",
+   "options": "Sales Invoice",
+   "read_only_depends_on": "eval:!!doc.invoice"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Unpaid\nPaid"
+  },
+  {
+   "fetch_from": "gym_member.member_name",
+   "fieldname": "gym_member_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "gym member name"
+  },
+  {
+   "fetch_from": "membership_plan.price",
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Price"
+  },
+  {
+   "fetch_from": "gym_member.customer",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "customer"
+  },
+  {
+   "fieldname": "column_break_lpwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "membership_plan.plan__name",
+   "fieldname": "membership_plan_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Membership Plan Name"
+  },
+  {
+   "fetch_from": "gym_member.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Email",
+   "options": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-01 08:50:19.607393",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Membership",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

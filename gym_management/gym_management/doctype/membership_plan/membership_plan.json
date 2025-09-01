@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-29 18:41:46.723289",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan__name",
+  "duration_in_days",
+  "price",
+  "item",
+  "benefits",
+  "column_break_sulw",
+  "enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan__name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan  Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_in_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration In Days",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item (Service)",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "benefits",
+   "fieldtype": "Small Text",
+   "label": "Benefits"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "column_break_sulw",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-31 13:16:03.140611",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Membership Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

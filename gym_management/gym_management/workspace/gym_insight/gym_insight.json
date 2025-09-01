@@ -1,0 +1,169 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"xRFJVdqqvp\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Insight</span>\",\"col\":12}},{\"id\":\"o7bmbVe80-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Gym Member\",\"col\":4}},{\"id\":\"UgKJiS7dG9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Trainer\",\"col\":4}},{\"id\":\"lTiKSHI1CP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Membership Plan\",\"col\":3}},{\"id\":\"hJAtjUsXq9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Membership\",\"col\":4}},{\"id\":\"qR9x_Iz2w6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Workout Session\",\"col\":4}},{\"id\":\"dY_yTLXpEO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Workout Type\",\"col\":3}},{\"id\":\"ldx3cFt-yC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rh8K2bqlRc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Members\",\"col\":4}},{\"id\":\"ME3GHki3hb\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Memberships\",\"col\":4}},{\"id\":\"28321mzHLR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Inactive Memberships\",\"col\":4}},{\"id\":\"CexdvLCQ1u\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"FRVyTX3t7n\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Today Expiring Memberships\",\"col\":4}},{\"id\":\"qUb1gGh7Mr\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Today Workout Sessions\",\"col\":4}},{\"id\":\"OuwGOjAiGY\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Tomorrow Workout Sessions\",\"col\":4}},{\"id\":\"Y1gzRKrUtj\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"JbZoogFo_w\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue Report\",\"col\":3}},{\"id\":\"aDf-fm7MO2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trainer Utilization Report\",\"col\":3}},{\"id\":\"QNbbBCvKtc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expired Memberships Report\",\"col\":3}},{\"id\":\"TiYGykOgag\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Active Memberships Report\",\"col\":3}},{\"id\":\"gy-29748rX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"General Ledger Report\",\"col\":3}},{\"id\":\"aLohHyezUk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Profit and Loss Statement Report\",\"col\":3}},{\"id\":\"n-bLZfqJcJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Balance Sheet Report\",\"col\":3}},{\"id\":\"l_rNSv-ycQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Membership Earnings Report\",\"col\":3}}]",
+ "creation": "2025-08-31 20:06:16.206795",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "unhide",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Gym Insight",
+ "links": [],
+ "modified": "2025-08-31 22:46:11.899286",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Insight",
+ "number_cards": [
+  {
+   "label": "Active Members",
+   "number_card_name": "active members"
+  },
+  {
+   "label": "Active Memberships",
+   "number_card_name": "Membership"
+  },
+  {
+   "label": "Inactive Memberships",
+   "number_card_name": "Membership-1"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Membership",
+   "label": "Today Expiring Memberships",
+   "quick_list_filter": "[[\"Membership\",\"end_date\",\"Timespan\",\"today\",false],[\"Membership\",\"status\",\"=\",\"Active\",false],[\"Membership\",\"docstatus\",\"=\",\"1\",false]]"
+  },
+  {
+   "document_type": "Workout Session",
+   "label": "Today Workout Sessions",
+   "quick_list_filter": "[[\"Workout Session\",\"date\",\"Timespan\",\"today\",false]]"
+  },
+  {
+   "document_type": "Workout Session",
+   "label": "Tomorrow Workout Sessions",
+   "quick_list_filter": "[[\"Workout Session\",\"date\",\"Timespan\",\"tomorrow\",false]]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 44.0,
+ "shortcuts": [
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Create Gym Member",
+   "link_to": "Gym Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Create Membership",
+   "link_to": "Membership",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Create Workout Type",
+   "link_to": "Workout Types",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Create Workout Session",
+   "link_to": "Workout Session",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue Report",
+   "link_to": "Revenue Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Trainer Utilization Report",
+   "link_to": "Trainer Utilization",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Create Trainer",
+   "link_to": "Trainer",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Expired Memberships Report",
+   "link_to": "Expire Member Ships",
+   "type": "Report"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Create Membership Plan",
+   "link_to": "Membership Plan",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Profit and Loss Statement Report",
+   "link_to": "Profit and Loss Statement",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Active Memberships Report",
+   "link_to": "Active member ships",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Balance Sheet Report",
+   "link_to": "Balance Sheet",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Membership Earnings Report",
+   "link_to": "Sales Analytics",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "General Ledger Report",
+   "link_to": "General Ledger",
+   "type": "Report"
+  }
+ ],
+ "title": "Gym Insight"
+}

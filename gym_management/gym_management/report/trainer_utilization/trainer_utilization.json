@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-08-31 21:46:52.371700",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-08-31 22:17:24.504437",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Trainer Utilization",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    t.trainer_name AS \"Trainer Name::200\",\n    t.gender AS \"Gender::200\",\n    t.employee AS \"Employee ID:Link/Employee:300\",\n    t.specialization_name AS \"Specialization::300\",\n    \n    COUNT(tm.members) AS \"Total Members:Int:200\"\nFROM\n    `tabTrainer` t\nLEFT JOIN\n    `tabAssigned Members` tm ON tm.parent = t.name\nGROUP BY\n    t.name, t.trainer_name, t.gender\nORDER BY\n    COUNT(tm.members) DESC;\n",
+ "ref_doctype": "Trainer",
+ "report_name": "Trainer Utilization",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
